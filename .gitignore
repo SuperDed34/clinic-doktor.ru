@@ -396,3 +396,10 @@ FodyWeavers.xsd
 
 # JetBrains Rider
 *.sln.iml
+
+*.config.js
+package.json
+package-lock.json
+.babelrc
+assets/
+src/
