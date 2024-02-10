@@ -1,1 +1,1 @@
-import './styles/typography.sass'
+import './styles/typography.scss'

@@ -1,0 +1,35 @@
+.search{
+    position: sticky;
+    top:0;
+    width: 100vw;
+    padding: 10px 0px;
+    background-color: $main-color;
+    .container{
+      display: flex;
+      flex-direction: row;
+      margin: 0 auto;
+      width: 95%;
+      overflow: hidden;
+      border-radius: 0.3em;
+      .search-field {
+        padding: 0.5em;
+        width: 80%;
+        border: none;
+        &:focus{
+          outline: none;
+        }
+      }
+      .search-button{
+        border: none;
+        width: 20%;
+        background-color: $accent-color;
+        color: $light-font;
+        transition: 0.5s;
+        @media (hover: hover) {
+          &:hover{
+            background-color: $hover;
+          }
+        }
+      }
+    }
+  }

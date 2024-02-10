@@ -1,0 +1,43 @@
+.profiles-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  color: $main-color;
+  max-width: $desktop;
+  @media (min-width: $tablet) {
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .profiles-list-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 12em;
+    background-color: $light-bg;
+    border-radius: 0.5em;
+    padding: 1em;
+    margin: 0.5em;
+    max-width: 20em;
+    -webkit-box-shadow: 2px 2px 3px 1px rgba(0,0,0,0.3); 
+    box-shadow: 2px 2px 3px 1px rgba(0,0,0,0.3);
+    transition: 0.3s;
+    @media (hover: hover) {
+      &:hover{
+        scale: 0.998;
+        box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);
+      }
+    }
+    @media (min-width: $tablet) {
+      max-width: 18em;
+    }
+    .profiles-list-item-h2 {
+      margin: 0;
+    }
+    .description {
+      margin: 1em auto;
+    }
+  }
+}
