@@ -22,10 +22,14 @@ html {
 
 body {
   background-color: $body-color;
+  display: flex;
 }
 
 .button {
   background-color: $light-font;
+  text-decoration: none;
+  padding: 0.5em;
+  text-align: center;
   color: $hover;
   border: 1px solid $hover;
   border-radius: 0.3em;
@@ -42,3 +46,5 @@ body {
 @import './normalize.scss';
 @import './search.scss';
 @import './specialityList.scss';
+@import './separator.scss';
+@import './info.scss';
