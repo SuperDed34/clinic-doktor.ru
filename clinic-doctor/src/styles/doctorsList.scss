@@ -48,44 +48,6 @@
           overflow: hidden;
           margin: 0 1em;
         }
-        .marks{
-          display: flex;
-          flex-direction: row;
-          width: 5em;
-          margin-top: 1em;
-          .rating{
-            display: flex;
-            flex-direction: row;
-            position: relative;
-            width: 100%;
-            margin: 0 0.6em;
-            .cover {
-            background: white;
-            height: 100%;
-            overflow: hidden;
-            mix-blend-mode: color;
-            position: absolute;
-            top: 0;
-            right: 0;
-            }
-            .star{
-              width: 1.5em;
-              height: 1.5em;
-              background-image: url(../assets/img/star.svg);
-              background-size: contain;
-              background-position: center;
-              background-repeat: no-repeat;
-              }
-              svg {
-                fill: gold;
-              }
-            }
-            .rate-count{
-              color: $disabled-color;
-              font-size: 0.8em;
-            }
-          }
-        }
         .card-like{
           position: absolute;
           top: 5px;
@@ -112,7 +74,45 @@
       }
     }
   }
-
   .footer {
     padding: 1.5em;
   }
+
+.marks{
+  display: flex;
+  flex-direction: row;
+  width: 5em;
+  margin-top: 1em;
+  .rating{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    width: 100%;
+    margin: 0 0.6em;
+    .cover {
+    background: white;
+    height: 100%;
+    overflow: hidden;
+    mix-blend-mode: color;
+    position: absolute;
+    top: 0;
+    right: 0;
+    }
+    .star{
+      width: 1.5em;
+      height: 1.5em;
+      background-image: url(../assets/img/star.svg);
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
+      }
+      svg {
+        fill: gold;
+      }
+    }
+    .rate-count{
+      color: $disabled-color;
+      font-size: 0.8em;
+    }
+  }
+}

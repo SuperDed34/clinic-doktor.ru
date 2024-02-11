@@ -1,0 +1,96 @@
+.detailed {
+  display: flex;
+  max-width: $desktop-whide;
+  flex-direction: row;
+  margin: 3em auto;
+  width: 90vw;
+  .detailed-card {
+    width: 100%;
+    background-color: $light-bg;
+    border-radius: 0.5em;
+    overflow: hidden;
+    @media (min-width: $desktop) {
+      width: 70%;
+    }
+    .detailed-card-header {
+      background-color: $main-color;
+      width: 100%;
+      padding: 1em;
+      a{
+        text-decoration: none;
+        color: $light-font;
+        cursor: pointer;
+        padding-left: 1em;
+      }
+    }
+    .detailed-card-introduce {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 1em;
+      @media (min-width: 584px) {
+      flex-direction: row;
+      }
+    }
+    .introduce-img {
+      height: 20em;
+      width: 20em;
+      @media (max-width: 584px) {
+      width: 96%;
+      height: 95%;
+      margin: 0 auto;
+      }
+    }
+    .introduce-text {
+      display: flex;
+      flex-direction: column;
+      padding-left: 1em;
+      .card-text-speciality {
+        color: $disabled-color;
+        font-size: 0.8em;
+      }
+      .card-text-name {
+        margin: 0;
+        font-weight: 700;
+      }
+      .marks {
+        margin: 1em 0;
+        .rating{
+          position: relative;
+          height: 1em;
+          width: fit-content;
+          display: flex;
+          flex-direction: row;
+          
+          svg {
+            height: 1em;
+            width: 1em;
+            fill: gold;
+          }
+          .cover{
+            background: white;
+            height: 100%;
+            overflow: hidden;
+            mix-blend-mode: color;
+            position: absolute;
+            top: 0;
+            right: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+.views-patients{
+  display: flex;
+  flex-direction: row;
+  .views, .patients {
+    margin: 0.3em;
+    background-color: $accent-color;
+    padding: 0.5em;
+    border-radius: 0.3em;
+    color: $light-font;
+    font-size: 0.8em;
+  }
+}
