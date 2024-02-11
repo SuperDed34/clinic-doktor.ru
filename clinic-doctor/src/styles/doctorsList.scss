@@ -18,6 +18,7 @@
       display: flex;
       flex-direction: row;
       height: 78%;
+      position: relative;
       .card-img {
         flex-shrink: 0;
         width: 5em;
@@ -78,13 +79,35 @@
               svg {
                 fill: gold;
               }
-
             }
             .rate-count{
               color: $disabled-color;
               font-size: 0.8em;
             }
           }
+        }
+        .card-like{
+          position: absolute;
+          top: 5px;
+          right: 10px;
+          height: 30px;
+          width: 30px;
+          background-color: gainsboro;
+          border-radius: 15%;
+          background-image: url(../assets/img/Ei-heart.svg);
+          background-position: center;
+          background-size: contain;
+          background-repeat: no-repeat;
+          &:hover {
+            filter: hue-rotate(45deg);
+          }
+        }
+      }
+      .card-footer {
+        display: flex;
+        justify-content: end;
+        .button {
+          margin: 0em 0.5em 0.5em 0em;
         }
       }
     }
