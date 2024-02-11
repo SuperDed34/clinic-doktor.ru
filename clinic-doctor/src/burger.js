@@ -4,7 +4,7 @@ export class Burger {
   menu = document.querySelector('.menu');
   hiddenBurger = document.querySelector('.burger-nav');
   hiddenBurgerContainer = document.querySelector('.burger-nav-menu');
-  menuItems = document.querySelectorAll('.menu-item');
+  header = document.querySelector('.header');
 
   changeButton() {
     this.burger.classList.toggle('rotate');
@@ -13,10 +13,9 @@ export class Burger {
       this.hiddenBurger.classList.add('show');
       this.body.style.overflow = 'hidden';
     } else {
-      setTimeout(() => this.hiddenBurgerContainer.removeChild(this.menu), 1000);
+      setTimeout(() => this.header.appendChild(this.menu), 1000);
       this.hiddenBurger.classList.remove('show');
       this.body.style.overflow = 'auto';
     }
   }
-
 }

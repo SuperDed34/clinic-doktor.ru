@@ -1,0 +1,12 @@
+.footer {
+  display: flex;
+  height: 5%;
+  background-color: $main-color;
+  .footer-header {
+    color: $light-font;
+    align-self: center;
+    margin: 0 auto;
+    font-weight: 400;
+    font-size: 0.8em;
+  }
+}

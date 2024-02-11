@@ -1,0 +1,91 @@
+.doctors {
+  display: flex;
+  flex-direction: column;
+  margin: 1em auto;
+  .doctor-card{
+    display: flex;
+    flex-direction: column;
+    background-color: $light-bg;
+    border-radius: 0.5em;
+    height: 10em;
+    width: 92%;
+    max-width: $tablet;
+    margin: 0 auto;
+    padding: 0.5em;
+    -webkit-box-shadow: 2px 2px 3px 1px rgba(0,0,0,0.3); 
+    box-shadow: 2px 2px 3px 1px rgba(0,0,0,0.3);
+    .card-top {
+      display: flex;
+      flex-direction: row;
+      height: 78%;
+      .card-img {
+        flex-shrink: 0;
+        width: 5em;
+        height: 5em;
+        border-radius: 50%;
+        background-image: url(../assets/img/Кокошенко.webp);
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+      }
+      .card-text {
+        display: flex;
+        flex-direction: column;
+        .card-text-speciality{
+          font-size: 1em;
+          color: $disabled-color;
+          margin: 0 0.8em;
+        }
+        .card-text-name {
+          font-size: 0.8em;
+          margin: 0.5em 1em;
+          font-weight: 600;
+        }
+        .card-text-description{
+          font-size: 0.7em;
+          height: 3.5em;
+          overflow: hidden;
+          margin: 0 1em;
+        }
+        .marks{
+          display: flex;
+          flex-direction: row;
+          width: 5em;
+          margin-top: 1em;
+          .rating{
+            display: flex;
+            flex-direction: row;
+            position: relative;
+            width: 100%;
+            margin: 0 0.6em;
+            .cover {
+            background: white;
+            height: 100%;
+            overflow: hidden;
+            mix-blend-mode: color;
+            position: absolute;
+            top: 0;
+            right: 0;
+            }
+            .star{
+              width: 1.5em;
+              height: 1.5em;
+              background-image: url(../assets/img/star.svg);
+              background-size: contain;
+              background-position: center;
+              background-repeat: no-repeat;
+              }
+              svg {
+                fill: gold;
+              }
+
+            }
+            .rate-count{
+              color: $disabled-color;
+              font-size: 0.8em;
+            }
+          }
+        }
+      }
+    }
+  }
